@@ -14,7 +14,7 @@ startRouter(views, store);
 import { firebaseApp } from './util/firebase/initializer'
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider views={views} store={store}>
        <App />
   </Provider>,
   document.getElementById('root')

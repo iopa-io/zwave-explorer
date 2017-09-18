@@ -1,0 +1,62 @@
+  .ogn-Devices .ms-List-page {
+    overflow: hidden;
+    font-size: 0;
+  }
+
+  .ogn-Devices {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ogn-Devices .ms-List-surface {
+    position: relative;
+  }
+
+  .ogn-Devices-tile {
+    text-align: center;
+    outline: none;
+    position: relative;
+    float: left; 
+  }
+
+  .ogn-Devices-sizer {
+    padding-bottom:  100%;
+  }
+
+  .ogn-Devices-padder {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+  }
+
+  .ms-Fabric.is-focusVisible .ogn-Devices-tile:focus:after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    box-sizing: border-box;
+    border: 1px solid white;
+  }
+
+  .ogn-Devices-label {
+    background: rgba(0,0,0,.3);
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ogn-Devices-image {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }

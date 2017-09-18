@@ -1,0 +1,11 @@
+.Breadcrumbs .ms-Breadcrumb-itemLink {
+    font-size: small;
+  }
+  
+.Breadcrumbs .ms-Breadcrumb-item {
+    font-size: small;
+  }
+
+  .Breadcrumbs {
+    margin-bottom: 18px;
+  }

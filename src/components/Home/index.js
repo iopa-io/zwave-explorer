@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import { Link } from 'mobx-router';
-import views from '~/router/views';
 
-@inject('store') @observer class Home extends Component {
+@inject('store', 'views') @observer class Home extends Component {
   render() {
     const goTo = this.props.store.router.goTo;
+    const views = this.props.views;
 
     return (
       <div>

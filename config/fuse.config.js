@@ -14,7 +14,7 @@ exports.initBuilder = function ({ paths, srcDir, targetDir, port, env }) {
             plugins: [
                 EnvPlugin(env),
                 SVGPlugin(),
-                CSSPlugin(),
+                 CSSPlugin(),
                 JSONPlugin(),
                 WebIndexPlugin({ template: path.join(srcDir, 'index.html'), path: './', }),
                 BabelPlugin({

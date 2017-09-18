@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
-import {Fabric} from 'office-ui-fabric-react/lib/Fabric'
+import { Fabric } from 'office-ui-fabric-react/lib/Fabric'
 import NavBar from '../App/NavBar.js'
+import Breadcrumbs from '../App/Breadcrumbs.js'
 import SidebarMenu from '../App/SidebarMenu.js'
 import Footer from '../App/Footer.js'
 import { MobxRouter } from 'mobx-router';
@@ -14,14 +15,15 @@ class Root extends Component {
       <Fabric className="App">
         <div className="header">
           <NavBar />
-        </div>        
+        </div>
         <div className="body">
           <div className="content">
-           <MobxRouter />
+            <Breadcrumbs />
+            <MobxRouter />
           </div>
           <div className="sidebar">
             <SidebarMenu />
-          </div>      
+          </div>
         </div>
         { /*<div className="footer">
           <Footer />

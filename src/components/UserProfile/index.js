@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import _ from 'lodash';
 import {inject, observer} from 'mobx-react';
-import views from '~/router/views';
 
-@inject('store') @observer class UserProfile extends Component {
+@inject('store', 'views') @observer class UserProfile extends Component {
   render() {
+    const views = this.props.views;
 
     const {params, goTo} = this.props.store.router;
 
